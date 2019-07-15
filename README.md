@@ -1,1 +1,1 @@
-"# Express REST API Boilerplate" 
+# Express REST API Boilerplate
