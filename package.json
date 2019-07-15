@@ -2,9 +2,9 @@
   "name": "express-api-boilerplate",
   "version": "1.0.0",
   "description": "A boilerplate for a REST API written with the Express framework for Node.js",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Raneesh Gomez",

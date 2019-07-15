@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
  * @description Custom imports
  */
 const app = require('./app');
+const server = require('./server');
 
 /**
  * TODO Import route endpoint handler files below
@@ -22,10 +23,6 @@ const corsOptions = {
 /**
  * @description Initialize Global Middleware
  */
-app.use((req, res, next) => {
-    res.setHeader("Content-Security-Policy", "*");
-    return next();
-});
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true })); // Parse application/x-www-form-urlencoded
 app.use(bodyParser.json());                         // Parse application/json
